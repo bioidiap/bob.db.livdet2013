@@ -16,10 +16,10 @@ class File(object):
     return "File('%s')" % self.stem
 
   def default_extension(self):
-	if self.stem.find('Biometrika')!=-1 or self.stem.find('ItalData')!=-1:
-	  return '.png'
+    if self.stem.find('Biometrika')!=-1 or self.stem.find('Italdata')!=-1:
+      return '.png'
     else:
-	  return '.bmp'
+      return '.bmp'
 
   def make_path(self, directory=None, extension=None):
     """Wraps this files' filename so that a complete path is formed
@@ -68,6 +68,3 @@ class File(object):
     path = self.make_path(directory, extension)
     bob.db.utils.makedirs_safe(os.path.dirname(path))
     bob.io.save(data, path)
-
-
-

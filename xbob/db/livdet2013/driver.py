@@ -20,7 +20,7 @@ def dumplist(args):
   from . import Database
   db = Database()
 
-  objects = db.objects(protocols = args.protocol, groups=args.group, classes=args.classes)
+  objects = db.objects(protocols = args.protocols, groups=args.groups, classes=args.classes)
 
   output = sys.stdout
   if args.selftest:
@@ -38,7 +38,7 @@ def checkfiles(args):
   from .__init__ import Database
   db = Database()
 
-  objects = db.objects(protocols = args.protocol, groups=args.group, classes=args.classes)
+  objects = db.objects(protocols = args.protocols, groups=args.groups, classes=args.classes)
 
   # go through all files, check if they are available on the filesystem
   good = []
@@ -69,10 +69,11 @@ class Interface(BaseInterface):
   def files(self):
     from pkg_resources import resource_filename
     raw_files = []
-    for p in protocols:
-      for g in groups:
-        for c in classes:
-		  raw_files.append(os.path.join(self.location,p,g,c+'.txt'))
+    db = Database()
+    for p in Database.protocols:
+      for g in Database.groups:
+        for c in Database.classes:
+          raw_files.append(os.path.join(db.location,p,g,c+'.txt'))
     
     return [resource_filename(__name__, k) for k in raw_files]
 

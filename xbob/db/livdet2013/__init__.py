@@ -88,7 +88,8 @@ class Database(object):
     for p in protocols:
       for g in groups:
         for c in classes:
-		  file_list = os.path.join(self.location,p,g,c+'.txt')
+          file_list = os.path.join(self.location,p,g,c+'.txt')
           retval += [File(k.strip()) for k in open(file_list, 'r').readlines() if k.strip()]
-	return retval
+
+    return retval
 

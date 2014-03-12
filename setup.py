@@ -25,7 +25,6 @@ setup(
 
     install_requires=[
       'setuptools',
-      'six',  # py2/3 compatibility library
       'bob',  # base signal proc./machine learning library
     ],
 
