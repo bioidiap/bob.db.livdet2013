@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim: set fileencoding=utf-8 :
-# Ivana Chingovska <ivana.chingovska@idiap.ch>
-# Sun Mar 25 18:33:12 CEST 2012
+# David Yambay <yambayda@gmail.com>
+# Fri Mar 14 14:33:12 CEST 2014
 
 """Dumps lists of files.
 """

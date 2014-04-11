@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-#David Yambay <ivana.chingovska@idiap.ch>
-#Thu Sep 20 12:15:37 CEST 2012
+#David Yambay <yambayda@gmail.com>
+#Fri Mar 14 14:15:37 CEST 2014
 
 import os
 import bob

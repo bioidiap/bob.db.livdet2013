@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim: set fileencoding=utf-8 :
-# Andre Anjos <andre.anjos@idiap.ch>
-# Mon 13 Aug 2012 12:38:15 CEST
+# David Yambay <yambayda@gmail.com>
+# 14 March 2014 14:38:15 CEST
 #
 # Copyright (C) 2011-2012 Idiap Research Institute, Martigny, Switzerland
 # 

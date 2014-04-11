@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # vim: set fileencoding=utf-8 :
-# Ivana Chingovska <ivana.chingovska@idiap.ch>
-# Tue Feb 21 11:44:31 CET 2012
+# David Yambay <yambayda@gmail.com>
+# Fri Mar 14 14:44:31 CET 2014
 #
 # Copyright (C) 2011-2012 Idiap Research Institute, Martigny, Switzerland
 # 
@@ -17,7 +17,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-"""A few checks at the NUAA database.
+"""A few checks at the LivDet 2013 database.
 """
 
 import os, sys
@@ -26,7 +26,7 @@ from . import Database
 import bob
 
 class LivDet2013TestCase(unittest.TestCase):
-  """Performs various tests on the NUAA spoofing attack database."""
+  """Performs various tests on the LivDet 2013 fingerprint liveness database."""
 
   def test01_biometrika(self):
     db = Database()

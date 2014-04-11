@@ -1,12 +1,16 @@
-==================================
- NUAA Face Anti-Spoofing Database
-==================================
+=========================================
+Livdet 2013 Fingerprint Liveness Database
+=========================================
 
-The NUAA database is a spoofing attack database which consists of real accesses
-and only printed photo attacks. There are three versions of the database:
-version composed of raw images, version composed of the cropped faces detected
-in the images and version composed of 64x64 normalized faces detected in the
-images. There are only train and test set defined.
+The Livdet 2013 Fingerprint Liveness Database is a fingerprint liveness database which consists of four sub-sets, which contain live and fake fingerprint images from four capture devices. Images have been collected by a consensual approach and using different materials for the artificial reproduction of the fingerprint (gelatine, silicone, play-doh, ecoflex, body double, wood glue).
+
+DATA SET
+ 	Scanner 	Model 	        Res (dpi) 	Image size 	Live samples 	Fake samples
+1 	Biometrika 	FX2000       	569 	    312X372 	2000 	        2000
+2 	Italdata 	ET10 	        500 	    640X480 	2000 	        2000
+3 	Crossmatch 	L SCAN GUARDIAN 500 	    640X480 	2500 	        2000
+4 	Swipe 		                96 		                2374 	        1979
+
 
 The actual raw data for the database should be downloaded from the original
 URL. This package only contains the `Bob <http://www.idiap.ch/software/bob/>`_
@@ -15,10 +19,7 @@ protocols.
 
 References::
 
-  1. X. Tan, Y. Li, J. Liu, L. Jiang: "Face Liveness Detection from a Single
-  Image with Sparse Low Rank Bilinear Discriminative Model", Proceedings of
-  11th European Conference on Computer Vision (ECCV'10), Crete, Greece,
-  September 2010; p.9-11
+1. L. Ghiani, D. Yambay, V. Mura, S. Tocco, G.L. Marcialis, F. Roli, and S. Schuckers, LivDet 2013 -  Fingerprint Liveness Detection Competition 2013, 6th IAPR/IEEE Int. Conf. on Biometrics, June, 4-7, 2013, Madrid (Spain).
 
 You would normally not install this package unless you are maintaining it. What
 you would do instead is to tie it in at the package you need to **use** it.
