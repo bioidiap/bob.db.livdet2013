@@ -40,7 +40,7 @@ The package is available in two different distribution formats:
 1. You can download it from `PyPI <http://pypi.python.org/pypi>`_, or
 
 2. You can download it in its source form from `its git repository
-   <https://github.com/bioidiap/xbob.db.nuaa>`_. When you download the
+   <https://github.com/bioidiap/xbob.db.livdet2013>`_. When you download the
    version at the git repository, you will need to run a command to recreate
    the backend SQLite file required for its operation. This means that the
    database raw files must be installed somewhere in this case. With option
@@ -60,7 +60,7 @@ script)::
 
     install_requires=[
       ...
-      "xbob.db.nuaa",
+      "xbob.db.livdet2013",
     ],
 
 Proceed normally with your ``boostrap/buildout`` steps and you should be all
@@ -80,8 +80,8 @@ lines::
   auto-checkout = *
   eggs = bob
          ...
-         xbob.db.nuaa
+         xbob.db.livdet2013
 
   [sources]
-  xbob.db.nuaa = git https://github.com/bioidiap/xbob.db.nuaa.git
+  xbob.db.livdet2013 = git https://github.com/bioidiap/xbob.db.livdet2013.git
   ...

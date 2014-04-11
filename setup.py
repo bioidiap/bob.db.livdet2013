@@ -29,7 +29,7 @@ setup(
     ],
 
     namespace_packages = [
-      'xbob',
+      'xbob'
       'xbob.db',
       ],
 
