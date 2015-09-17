@@ -41,7 +41,7 @@ class File(object):
     if not extension: extension = self.default_extension()
     return os.path.join(directory, self.stem + extension)
 
-  def is_live():
+  def is_live(self):
     """True if the file belongs to a Live image, False otherwise """
 
     return self.stem.find('Live')!=-1
