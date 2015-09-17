@@ -1,2 +1,2 @@
-include README.rst
+include README.rst bootstrap.py buildout.cfg
 recursive-include xbob *.txt
