@@ -10,9 +10,9 @@ from setuptools import setup, find_packages
 setup(
 
     name='xbob.db.livdet2013',
-    version='1.0',
+    version='1.0.0',
     description='LivDet 2013 Fingerprint database access',
-    url='https://github.com/dyambay/xbob.db.livdet2013',
+    url='https://github.com/bioidiap/bob.db.livdet2013',
     license='GPLv3',
     author='David Yambay',
     author_email='yambayda@gmail.com',

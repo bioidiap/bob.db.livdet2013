@@ -3,27 +3,6 @@
 # David Yambay <yambayda@gmail.com>
 # Fri March 14 14:57:28 CET 2014
 
-"""
-The Livdet 2013 Fingerprint Liveness Database is a fingerprint liveness database which consists of four sub-sets, which contain live and fake fingerprint images from four capture devices. Images have been collected by a consensual approach and using different materials for the artificial reproduction of the fingerprint (gelatine, silicone, play-doh, ecoflex, body double, wood glue).
-
-DATA SET
- 	Scanner 	Model 	        Res (dpi) 	Image size 	Live samples 	Fake samples
-1 	Biometrika 	FX2000       	569 	    312X372 	2000 	        2000
-2 	Italdata 	ET10 	        500 	    640X480 	2000 	        2000
-3 	Crossmatch 	L SCAN GUARDIAN 500 	    640X480 	2500 	        2000
-4 	Swipe 		                96 		                2374 	        1979
-
-
-The actual raw data for the database should be downloaded from the original
-URL. This package only contains the `Bob <http://www.idiap.ch/software/bob/>`_
-accessor methods to use the DB directly from python, with our certified
-protocols.
-
-References::
-
-1. L. Ghiani, D. Yambay, V. Mura, S. Tocco, G.L. Marcialis, F. Roli, and S. Schuckers, LivDet 2013 -  Fingerprint Liveness Detection Competition 2013, 6th IAPR/IEEE Int. Conf. on Biometrics, June, 4-7, 2013, Madrid (Spain).
-""""
-
 import os
 import six
 from .models import *
@@ -85,7 +64,7 @@ class Database(object):
     VALID_GROUPS = Database.groups
     groups = check_validity(groups, "group", VALID_GROUPS, VALID_GROUPS)
 
-    # 
+    #
     VALID_CLASSES = Database.classes
     classes = check_validity(classes, "class", VALID_CLASSES, VALID_CLASSES)
 
@@ -98,4 +77,3 @@ class Database(object):
           retval += [File(k.strip()) for k in open(file_list, 'r').readlines() if k.strip()]
 
     return retval
-

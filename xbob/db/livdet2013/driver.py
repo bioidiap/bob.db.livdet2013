@@ -74,7 +74,7 @@ class Interface(BaseInterface):
       for g in Database.groups:
         for c in Database.classes:
           raw_files.append(os.path.join(db.location,p,g,c+'.txt'))
-    
+
     return [resource_filename(__name__, k) for k in raw_files]
 
   def version(self):

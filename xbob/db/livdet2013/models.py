@@ -11,7 +11,7 @@ class File(object):
   def __init__(self, stem):
 
     self.stem = stem
-    
+
   def __repr__(self):
     return "File('%s')" % self.stem
 
@@ -40,7 +40,7 @@ class File(object):
     if not directory: directory = ''
     if not extension: extension = self.default_extension()
     return os.path.join(directory, self.stem + extension)
-    
+
   def is_live():
     """True if the file belongs to a Live image, False otherwise """
 
