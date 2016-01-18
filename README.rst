@@ -1,6 +1,6 @@
 .. vim: set fileencoding=utf-8 :
-.. Manuel Guenther <manuel.guenther@idiap.ch>
-.. Fri Oct 31 14:18:57 CET 2014
+.. Andre Anjos <andre.anjos@idiap.ch>
+.. Mon 18 Jan 2016 16:31:16 CET
 
 .. image:: https://travis-ci.org/bioidiap/bob.db.livdet2013.svg?branch=master
    :target: https://travis-ci.org/bioidiap/bob.db.livdet2013
