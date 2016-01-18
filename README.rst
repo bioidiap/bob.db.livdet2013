@@ -12,8 +12,6 @@
    :target: https://pypi.python.org/pypi/bob.db.livdet2013
 .. image:: http://img.shields.io/pypi/dm/bob.db.livdet2013.png
    :target: https://pypi.python.org/pypi/bob.db.livdet2013
-.. image:: https://img.shields.io/badge/original-data--files-a000a0.png
-   :target: http://www.idiap.ch/dataset/livdet2013
 
 
 =========================================
