@@ -1,0 +1,29 @@
+language: python
+matrix:
+  include:
+  - python: 2.7
+    env:
+    - secure: nFUUA3ju4Y+JTuLS4N2u+9FZtvWMIKij8wz4OzpLNtPhAitdzZJSiAUgE5uY94MbRlsyBkLuyUiJ144RVRoRmZuaw4Dkr/ntW3Z/zqIni7IYJ4yl3QUPXGSbTH7HR2LQIid7mHkeWcEguyfiusSYhBhmEtxPJoHN4SfaFfveX28=
+    - secure: bN9g+XWFSBHYsJdjNVk/h0ijua42yi5pfw2EIEpSGAg5IoIVP2ZwwC5Nc3z+w08+TpdyHjFqP7wVj0e0Ltcz2+Ia3sG8sprqC4jaVrEe4E2xaImvzxRUpLBzgO7jbPsi8Kulz1BCuSKcE+P9/wHpGi92DX42+lVw4f2iFtKWEaM=
+    - BOB_DOCUMENTATION_SERVER=https://www.idiap.ch/software/bob/docs/latest/bioidiap/%s/master
+    - BOB_UPLOAD_WHEEL="--universal"
+  - python: 3.3
+  - python: 3.4
+  - python: 3.5
+before_install:
+- sudo add-apt-repository -y ppa:biometrics/bob
+- sudo apt-get update -qq
+- sudo apt-get install -qq --force-yes libboost-all-dev libblitz1-dev libhdf5-serial-dev libatlas-dev libatlas-base-dev liblapack-dev texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended
+- pip install --find-links https://www.idiap.ch/software/bob/wheels/travis/ --use-wheel sphinx nose numpy coverage
+- pip install --find-links https://www.idiap.ch/software/bob/wheels/travis/ --use-wheel --pre -r requirements.txt coveralls
+install:
+- python bootstrap-buildout.py
+- ./bin/buildout buildout:develop=. buildout:extensions=bob.buildout buildout:auto-checkout=
+script:
+- ./bin/python -c 'import pkg_resources; from bob.db.livdet2013 import get_config; print(get_config())'
+- ./bin/coverage run --source=bob.db.livdet2013 ./bin/nosetests -sv
+after_success:
+- coveralls
+- wget https://raw.githubusercontent.com/bioidiap/bob.extension/master/scripts/upload-wheel.sh
+- chmod a+x upload-wheel.sh
+- ./upload-wheel.sh
