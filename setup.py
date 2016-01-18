@@ -3,14 +3,21 @@
 # David Yambay <yambayda@gmail.com>
 # Mar 14 2014 14:32
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, dist
+dist.Distribution(dict(setup_requires=['bob.extension']))
+
+from bob.extension.utils import load_requirements
+install_requires = load_requirements()
+
+# Define package version
+version = open("version.txt").read().rstrip()
 
 # The only thing we do in this file is to call the setup() function with all
 # parameters that define our package.
 setup(
 
-    name='xbob.db.livdet2013',
-    version='1.0.1',
+    name='bob.db.livdet2013',
+    version=version,
     description='LivDet 2013 Fingerprint database access',
     url='https://github.com/bioidiap/bob.db.livdet2013',
     license='GPLv3',
@@ -23,28 +30,12 @@ setup(
     include_package_data=True,
     zip_safe=False,
 
-    install_requires=[
-      'setuptools',
-      'bob',  # base signal proc./machine learning library
-    ],
-
-    namespace_packages = [
-      'xbob',
-      'xbob.db',
-      ],
+    install_requires=install_requires,
 
     entry_points={
-
-      # declare database to bob
       'bob.db': [
-        'livdet2013 = xbob.db.livdet2013.driver:Interface',
+        'livdet2013 = bob.db.livdet2013.driver:Interface',
         ],
-
-      # declare tests to bob
-      'bob.test': [
-        'livdet2013 = xbob.db.livdet2013.test:livdet2013DatabaseTest',
-        ],
-
       },
 
     classifiers = [

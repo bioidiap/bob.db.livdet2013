@@ -23,7 +23,6 @@
 import os, sys
 import unittest
 from . import Database
-import bob
 
 class LivDet2013TestCase(unittest.TestCase):
   """Performs various tests on the LivDet 2013 fingerprint liveness database."""
