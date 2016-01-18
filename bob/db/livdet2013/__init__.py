@@ -7,6 +7,13 @@ import os
 import six
 from .models import *
 
+def get_config():
+  """Returns a string containing the configuration information.
+  """
+  import bob.extension
+  return bob.extension.get_config(__name__)
+
+
 class Database(object):
 
   protocols = ('Biometrika','CrossMatch','Italdata','Swipe')
@@ -77,3 +84,7 @@ class Database(object):
           retval += [File(k.strip()) for k in open(file_list, 'r').readlines() if k.strip()]
 
     return retval
+
+
+# gets sphinx autodoc done right - don't remove it
+__all__ = [_ for _ in dir() if not _.startswith('_')]
