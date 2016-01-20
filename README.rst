@@ -2,7 +2,7 @@
 .. Andre Anjos <andre.anjos@idiap.ch>
 .. Mon 18 Jan 2016 16:31:16 CET
 
-.. image:: https://travis-ci.org/bioidiap/bob.db.livdet2013.svg?branch=v2.0.1
+.. image:: https://travis-ci.org/bioidiap/bob.db.livdet2013.svg?branch=master
    :target: https://travis-ci.org/bioidiap/bob.db.livdet2013
 .. image:: https://coveralls.io/repos/bioidiap/bob.db.livdet2013/badge.png
    :target: https://coveralls.io/r/bioidiap/bob.db.livdet2013
