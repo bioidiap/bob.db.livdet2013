@@ -1,2 +1,2 @@
-include README.rst bootstrap-buildout.py buildout.cfg
+include README.rst bootstrap-buildout.py buildout.cfg requirements.txt version.txt
 recursive-include bob *.txt
