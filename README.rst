@@ -4,7 +4,7 @@
 
 .. image:: https://travis-ci.org/bioidiap/bob.db.livdet2013.svg?branch=master
    :target: https://travis-ci.org/bioidiap/bob.db.livdet2013
-.. image:: https://coveralls.io/repos/bioidiap/bob.db.livdet2013/badge.png
+.. image:: https://coveralls.io/repos/bioidiap/bob.db.livdet2013/badge.svg?branch=master
    :target: https://coveralls.io/r/bioidiap/bob.db.livdet2013
 .. image:: https://img.shields.io/badge/github-master-0000c0.png
    :target: https://github.com/bioidiap/bob.db.livdet2013/tree/master
