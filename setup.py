@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # vim: set fileencoding=utf-8 :
-# David Yambay <yambayda@gmail.com>
-# Mar 14 2014 14:32
 
 from setuptools import setup, find_packages, dist
 dist.Distribution(dict(setup_requires=['bob.extension']))
@@ -18,11 +16,13 @@ setup(
 
     name='bob.db.livdet2013',
     version=version,
-    description='LivDet 2013 Fingerprint database access',
-    url='https://github.com/bioidiap/bob.db.livdet2013',
-    license='GPLv3',
+    description='LivDet 2013 Fingerprint database access for Bob',
+    url='https://gitlab.idiap.ch/bob/bob.db.livdet2013',
+    license='BSD',
     author='David Yambay',
     author_email='yambayda@gmail.com',
+    maintainer='Andre Anjos',
+    maintainer_email='andre.anjos@idiap.ch',
     long_description=open('README.rst').read(),
 
     # This line is required for any distutils based packaging.
@@ -42,7 +42,7 @@ setup(
       'Framework :: Bob',
       'Development Status :: 4 - Beta',
       'Intended Audience :: Developers',
-      'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
+      'License :: OSI Approved :: BSD License',
       'Natural Language :: English',
       'Programming Language :: Python',
       'Programming Language :: Python :: 3',
