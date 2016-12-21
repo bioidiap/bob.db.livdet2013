@@ -67,15 +67,7 @@ class Interface(BaseInterface):
     return 'livdet2013'
 
   def files(self):
-    from pkg_resources import resource_filename
-    raw_files = []
-    db = Database()
-    for p in Database.protocols:
-      for g in Database.groups:
-        for c in Database.classes:
-          raw_files.append(os.path.join(db.location,p,g,c+'.txt'))
-
-    return [resource_filename(__name__, k) for k in raw_files]
+    return []
 
   def version(self):
     import pkg_resources  # part of setuptools
