@@ -7,6 +7,8 @@
    :target: https://www.idiap.ch/software/bob/docs/latest/bob/bob.db.livdet2013/master/index.html
 .. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/build.svg
    :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/master
+.. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/coverage.svg
+   :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/master
 .. image:: https://img.shields.io/badge/gitlab-project-0000c0.svg
    :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013
 .. image:: http://img.shields.io/pypi/v/bob.db.livdet2013.svg
@@ -27,11 +29,10 @@ Database`_ for fingerprint liveness detection.
 Installation
 ------------
 
-Follow our `installation`_ instructions. Then, using the Python interpreter
-provided by the distribution, bootstrap and buildout this package::
+Complete Bob's `installation`_ instructions. Then, to install this pacakge,
+run::
 
-  $ python bootstrap-buildout.py
-  $ ./bin/buildout
+  $ conda install bob.db.livdet2013
 
 
 Contact
