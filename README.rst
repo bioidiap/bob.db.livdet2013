@@ -2,9 +2,9 @@
 .. Fri 21 Oct 12:50:32 CEST 2016
 
 .. image:: http://img.shields.io/badge/docs-stable-yellow.svg
-   :target: http://pythonhosted.org/bob.db.livdet2013/index.html
+   :target: https://www.idiap.ch/software/bob/docs/bob/bob.db.livdet2013/stable/index.html
 .. image:: http://img.shields.io/badge/docs-latest-orange.svg
-   :target: https://www.idiap.ch/software/bob/docs/latest/bob/bob.db.livdet2013/master/index.html
+   :target: https://www.idiap.ch/software/bob/docs/bob/bob.db.livdet2013/master/index.html
 .. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/build.svg
    :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/master
 .. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/coverage.svg
@@ -12,8 +12,6 @@
 .. image:: https://img.shields.io/badge/gitlab-project-0000c0.svg
    :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013
 .. image:: http://img.shields.io/pypi/v/bob.db.livdet2013.svg
-   :target: https://pypi.python.org/pypi/bob.db.livdet2013
-.. image:: http://img.shields.io/pypi/dm/bob.db.livdet2013.svg
    :target: https://pypi.python.org/pypi/bob.db.livdet2013
 
 
@@ -29,7 +27,7 @@ Database`_ for fingerprint liveness detection.
 Installation
 ------------
 
-Complete Bob's `installation`_ instructions. Then, to install this pacakge,
+Complete Bob's `installation`_ instructions. Then, to install this package,
 run::
 
   $ conda install bob.db.livdet2013
