@@ -1,14 +1,14 @@
 .. vim: set fileencoding=utf-8 :
 .. Fri 21 Oct 12:50:32 CEST 2016
 
-.. image:: http://img.shields.io/badge/docs-stable-yellow.svg
-   :target: https://www.idiap.ch/software/bob/docs/bob/bob.db.livdet2013/stable/index.html
+.. image:: http://img.shields.io/badge/docs-v2.1.4-yellow.svg
+   :target: https://www.idiap.ch/software/bob/docs/bob/bob.db.livdet2013/v2.1.4/index.html
 .. image:: http://img.shields.io/badge/docs-latest-orange.svg
    :target: https://www.idiap.ch/software/bob/docs/bob/bob.db.livdet2013/master/index.html
-.. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/build.svg
-   :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/master
-.. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/master/coverage.svg
-   :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/master
+.. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/v2.1.4/build.svg
+   :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/v2.1.4
+.. image:: https://gitlab.idiap.ch/bob/bob.db.livdet2013/badges/v2.1.4/coverage.svg
+   :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013/commits/v2.1.4
 .. image:: https://img.shields.io/badge/gitlab-project-0000c0.svg
    :target: https://gitlab.idiap.ch/bob/bob.db.livdet2013
 .. image:: http://img.shields.io/pypi/v/bob.db.livdet2013.svg
